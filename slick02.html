@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/slick.css">
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/slick.js"></script>
+    <script lang="java">
+        $(function(){
+            $(".move").slick({
+                autoplay:true , 
+                appendArrows:$(".btn button"),
+                prevArrow:$(".left"),
+                nextArrow:$(".right")
+            })
+        })
+    </script>
+    <style type="text/css">
+        *{margin: 0; padding: 0; }
+        a{text-decoration: none;}
+        ul,li{list-style: none;}
+
+        .slide_img{width: 980px; height: 379px; margin: 100px auto; }
+    </style>
+</head>
+<body>
+    <div class="slide_img">
+        <ul class="move">
+            <li><a href="#"><img src="img/KIA01.JPG" alt=""></a></li>
+            <li><a href="#"><img src="img/KIA02.JPG" alt=""></a></li>
+            <li><a href="#"><img src="img/KIA03.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/KIA04.jpg" alt=""></a></li>
+        </ul>
+
+        <div class="btn">
+            <button class="left">LEFT</button>
+            <button class="right">RIGHT</button>
+        </div>
+    </div>
+</body>
+</html>

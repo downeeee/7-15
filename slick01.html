@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick01_style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/slick.js"></script>
+    <script lang="java">
+        $(function(){
+            $(".move").slick({
+                autoplay:true , autoplaySpeed:1000 ,
+                dots:true ,
+                // arrows:false화살표는 기본이 true라 보임
+                // slidesToShow:2, slidesToScroll:2
+                // vertical:true 위로빠짐
+                // fade:true
+            })//move
+            $(".view").slick({
+                autoplay:true , autoplaySpeed:1500,
+                fade:true , dots:true
+            })
+
+            $(".face").slick({
+                autoplay:true , autoplaySpeed:1500,
+                slidesToShow:5 , dots:true
+                
+                
+            })  
+
+            $(".face_1").slick({
+                autoplay:true , slideToShow:5,
+                initialSlide:3
+                
+            })
+
+
+        })//jq end
+    </script>
+</head>
+<body>
+    <div class="slide_img">
+        <ul class="move">
+            <li><a href="#"><img src="img/main_visual05.jpg" alt="main_visual05"></a></li>
+            <li><a href="#"><img src="img/main_visual06.jpg" alt="main_visual06"></a></li>
+            <li><a href="#"><img src="img/main_visual07.jpg" alt="main_visual07"></a></li>
+            <li><a href="#"><img src="img/main_visual08.jpg" alt="main_visual08"></a></li>
+        </ul>
+    </div>
+
+    <div class="main_view">
+        <div class="view">
+            <div><a href="#"><img src="img/hollys01.jpg" alt="hollys01"></a></div>
+            <div><a href="#"><img src="img/hollys02.jpg" alt="hollys02"></a></div>
+            <div><a href="#"><img src="img/hollys03.jpg" alt="hollys03"></a></div>
+            <div><a href="#"><img src="img/hollys04.jpg" alt="hollys04"></a></div>
+        </div>
+    </div>
+
+    <div class="face_img">
+        <div class="face">
+            <div><img src="img/normal_01.png" alt=""></div>
+            <div><img src="img/normal_02.png" alt=""></div>
+            <div><img src="img/normal_03.png" alt=""></div>
+            <div><img src="img/normal_04.png" alt=""></div>
+            <div><img src="img/normal_05.png" alt=""></div>
+            <div><img src="img/normal_06.png" alt=""></div>
+            <div><img src="img/normal_07.png" alt=""></div>
+            <div><img src="img/normal_08.png" alt=""></div>
+            <div><img src="img/normal_09.png" alt=""></div>
+            <div><img src="img/normal_10.png" alt=""></div>
+            <div><img src="img/normal_11.png" alt=""></div>
+            <div><img src="img/normal_12.png" alt=""></div>
+            
+        </div>
+    </div>
+    <div class="face_img">
+        <div class="face_1">
+            <div><img src="img/normal_01.png" alt=""></div>
+            <div><img src="img/normal_02.png" alt=""></div>
+            <div><img src="img/normal_03.png" alt=""></div>
+            <div><img src="img/normal_04.png" alt=""></div>
+            <div><img src="img/normal_05.png" alt=""></div>
+            <div><img src="img/normal_06.png" alt=""></div>
+            <div><img src="img/normal_07.png" alt=""></div>
+            <div><img src="img/normal_08.png" alt=""></div>
+            <div><img src="img/normal_09.png" alt=""></div>
+            <div><img src="img/normal_10.png" alt=""></div>
+            <div><img src="img/normal_11.png" alt=""></div>
+            <div><img src="img/normal_12.png" alt=""></div>
+            
+        </div>
+    </div>
+</body>
+</html>
